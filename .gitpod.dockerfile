@@ -6,8 +6,13 @@ RUN sudo apt-get update \
         snapd \
     && sudo rm -rf /var/lib/apt/lists/*
 
+# Python
 RUN pip install pytest
 
+# Exercism
 RUN wget https://github.com/exercism/cli/releases/download/v3.0.13/exercism-3.0.13-linux-x86_64.tar.gz 
 RUN tar -xf exercism-3.0.13-linux-x86_64.tar.gz 
 RUN sudo mv exercism /usr/local/bin
+
+# Go Lang
+RUN go install honnef.co/go/tools/cmd/staticcheck@latest

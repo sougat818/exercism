@@ -11,3 +11,4 @@ vscode:
     - vscjava.vscode-java-pack
     - redhat.java
     - davidanson.vscode-markdownlint
+    - golang.go
