@@ -1,3 +1,5 @@
+"""This module helps guido make gorgeous lasagna."""
+
 # 'EXPECTED_BAKE_TIME' constant
 EXPECTED_BAKE_TIME = 40
 # 'PREPARATION_TIME' constant
