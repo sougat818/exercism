@@ -3,6 +3,8 @@ image:
 tasks:
   - name: Configure exercism
     command: exercism configure --token=$EXERCISM_TOKEN -w /workspace/exercism
+  - name: Install Go staticcheck
+    command: go install honnef.co/go/tools/cmd/staticcheck@latest
 
 vscode:
   extensions:
