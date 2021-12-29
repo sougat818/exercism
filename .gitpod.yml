@@ -1,2 +1,10 @@
 image:
   file: .gitpod.dockerfile
+tasks:
+  - name: Configure exercism
+    command: exercism configure --token=$EXERCISM_TOKEN 
+
+vscode:
+  extensions:
+    - ms-python.python
+    - ms-azuretools.vscode-docker
