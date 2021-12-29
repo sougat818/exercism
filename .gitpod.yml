@@ -2,9 +2,12 @@ image:
   file: .gitpod.dockerfile
 tasks:
   - name: Configure exercism
-    command: exercism configure --token=$EXERCISM_TOKEN 
+    command: exercism configure --token=$EXERCISM_TOKEN -w /workspace/exercism
 
 vscode:
   extensions:
     - ms-python.python
     - ms-azuretools.vscode-docker
+    - vscjava.vscode-java-pack
+    - redhat.java
+    - davidanson.vscode-markdownlint
