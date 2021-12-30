@@ -15,4 +15,5 @@ This repository contains [Sougata Khan's](https://exercism.org/profiles/sougat81
 | <!--- 7 -->[Party Robot](https://exercism.org/tracks/go/exercises/party-robot)| [party-robot](party-robot)| Welcome To Tech Palace! In-progress Learn about strings and the strings package by generating text for a store's new display." |
 | <!--- 8 -->[Vehicle Purchase](https://exercism.org/tracks/go/exercises/vehicle-purchase)| [vehicle-purchase](vehicle-purchase)| Learn about comparison and conditional-ifs while preparing for your next vehicle purchase" |
 | <!--- 9 -->[Blackjack](https://exercism.org/tracks/go/exercises/blackjack)| [blackjack](blackjack)| Learn about conditionals by playing Blackjack." |
+| <!---10 -->[Need For Speed](https://exercism.org/tracks/go/exercises/need-for-speed)| [need-for-speed](need-for-speed)| Learn about structs by racing remote controlled cars" |
 
