@@ -19,3 +19,8 @@ This repository contains [Sougata Khan's](https://exercism.org/profiles/sougat81
 | <!---11 -->[Card Tricks](https://exercism.org/tracks/go/exercises/card-tricks)| [card-tricks](card-tricks)| Learn about slices by doing card tricks." |
 | <!---12 -->[Booking up for Beauty](https://exercism.org/tracks/go/exercises/booking-up-for-beauty)| [booking-up-for-beauty](booking-up-for-beauty)| Learn about time by handling appointments in a beauty salon." |
 | <!---13 -->[Bird Watcher](https://exercism.org/tracks/go/exercises/bird-watcher)| [bird-watcher](bird-watcher)| Count the birds in your garden with for loops." |
+| <!---14 -->[Two Fer](https://exercism.org/tracks/go/exercises/two-fer)| [two-fer](two-fer)| Create a sentence of the form "One for X, one for me."" |
+
+
+
+
