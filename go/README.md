@@ -16,4 +16,4 @@ This repository contains [Sougata Khan's](https://exercism.org/profiles/sougat81
 | <!--- 8 -->[Vehicle Purchase](https://exercism.org/tracks/go/exercises/vehicle-purchase)| [vehicle-purchase](vehicle-purchase)| Learn about comparison and conditional-ifs while preparing for your next vehicle purchase" |
 | <!--- 9 -->[Blackjack](https://exercism.org/tracks/go/exercises/blackjack)| [blackjack](blackjack)| Learn about conditionals by playing Blackjack." |
 | <!---10 -->[Need For Speed](https://exercism.org/tracks/go/exercises/need-for-speed)| [need-for-speed](need-for-speed)| Learn about structs by racing remote controlled cars" |
-
+| <!---11 -->[Card Tricks](https://exercism.org/tracks/go/exercises/card-tricks)| [card-tricks](card-tricks)| Learn about slices by doing card tricks." |
