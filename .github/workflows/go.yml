@@ -36,7 +36,7 @@ jobs:
         path: "./go/..."   
       continue-on-error: true 
     - name: Run staticcheck with reviewdog
-      uses: docker://reviewdog/action-staticcheck:v1
+      uses: reviewdog/action-staticcheck@v1
       with:
           fail_on_error: true
         
