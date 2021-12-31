@@ -23,3 +23,15 @@ jobs:
 
     - name: Test
       run: for d in go/*/ ; do (cd "$d" && go test ./...); done
+    
+    - name: Benchmark
+      run: for d in go/*/ ; do (cd "$d" && go test -v --bench --benchmem ./...); done
+      
+    - name: Vet
+      run: for d in go/*/ ; do (cd "$d" && go vet ./...); done
+      
+    - name: Revive
+      uses: docker://morphy/revive-action:v2
+      with:
+        path: "go"
+
