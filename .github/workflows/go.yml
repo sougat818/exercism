@@ -30,8 +30,11 @@ jobs:
     - name: Vet
       run: for d in go/*/ ; do (cd "$d" && go vet ./...); done
       
-    - name: Revive
-      uses: docker://morphy/revive-action:v2
-      with:
-        path: "go"
+    - name: Revive Action
+      uses: morphy2k/revive-action@v2.2.3
+      continue-on-error: true 
+      
+    - name: Revive Action
+      run: for d in go/*/ ; do (cd "$d" && revive ./...); done
+      continue-on-error: true 
 
