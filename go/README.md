@@ -22,3 +22,4 @@ This repository contains [Sougata Khan's](https://exercism.org/profiles/sougat81
 | <!---14 -->[Two Fer](https://exercism.org/tracks/go/exercises/two-fer)| [two-fer](two-fer)| Create a sentence of the form "One for X, one for me." |
 | <!---15 -->[Two Fer](https://exercism.org/tracks/go/exercises/hamming)| [hamming](hamming)| Calculate the Hamming difference between two DNA strands. |
 | <!---16 -->[Lasagna Master](https://exercism.org/tracks/go/exercises/lasagna-master)| [lasagna-master](lasagna-master)| Dive deeper into Go functions while preparing to cook the perfect lasagna. |
+| <!---17 -->[Gross Store](https://exercism.org/tracks/go/exercises/gross-store)| [gross-store](gross-store)| Learn about maps by selling items by the dozen at the Gross Store. |
