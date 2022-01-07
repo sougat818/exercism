@@ -26,6 +26,6 @@ jobs:
         java-version: '17'
         distribution: 'temurin'
     - name: Run the Gradle package task
-      run: for d in java/*/ ; do (cd "$d" && gradle package); done
+      run: for d in java/*/ ; do (cd "$d" && gradle build); done
     - name: Run the Gradle package task
       run: for d in java/*/ ; do (cd "$d" && gradle check); done
