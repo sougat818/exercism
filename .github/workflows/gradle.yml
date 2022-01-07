@@ -25,7 +25,5 @@ jobs:
       with:
         java-version: '17'
         distribution: 'temurin'
-    - name: Validate Gradle wrapper
-      uses: gradle/wrapper-validation-action@e6e38bacfdf1a337459f332974bb2327a31aaf4b
     - name: Run the Gradle package task
       run: for d in java/*/ ; do (cd "$d" && ./gradlew package); done
