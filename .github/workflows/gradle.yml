@@ -27,3 +27,5 @@ jobs:
         distribution: 'temurin'
     - name: Run the Gradle package task
       run: for d in java/*/ ; do (cd "$d" && gradle package); done
+    - name: Run the Gradle package task
+      run: for d in java/*/ ; do (cd "$d" && gradle check); done
