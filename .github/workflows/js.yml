@@ -25,10 +25,7 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
         cache-dependency-path: '**/package-lock.json'
-    - run: npm install eslint --global
-    - run: npm install prettier --global
     - run: for d in javascript/*/ ; do (cd "$d" && npm ci); done
     - run: for d in javascript/*/ ; do (cd "$d" && npm run build --if-present); done
     - run: for d in javascript/*/ ; do (cd "$d" && npm test); done
     - run: npm install eslint --global && for d in javascript/*/ ; do (cd "$d" && npm run lint); done
-    - run: for d in javascript/*/ ; do (cd "$d" && npm prettier --check "$d.js"); done
