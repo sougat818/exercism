@@ -8,4 +8,4 @@ This repository contains [Sougata Khan's](https://exercism.org/profiles/sougat81
 
 | Exercism Problem                                                              |   Solution                | Description |
 |-------------------------------------------------------------------------------|---------------------------|-------------|
-|[Hello World](https://exercism.org/tracks/java/exercises/hello-world)| [Go](go/hello-world/hello_world.go), [Java](java/hello-world/src/main/java/Greeter.java), [JS](javascript/hello-world/hello-world.js), [Python](python/hello-world/hello_world.py)| The classical introductory exercise. Just say "Hello, World!" [TS](typescript/hello-world/hello-world.ts)| The classical introductory exercise. Just say "Hello, World!" | |
+|[Hello World](https://exercism.org/tracks/java/exercises/hello-world)| [Go](go/hello-world/hello_world.go), [Java](java/hello-world/src/main/java/Greeter.java), [JS](javascript/hello-world/hello-world.js), [Python](python/hello-world/hello_world.py) [TS](typescript/hello-world/hello-world.ts) | The classical introductory exercise. Just say "Hello, World!" |
