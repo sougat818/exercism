@@ -8,5 +8,5 @@ This repository contains [Sougata Khan's](https://exercism.org/profiles/sougat81
 
 | Exercism Problem                                                              |   Solution                | Description |
 |-------------------------------------------------------------------------------|---------------------------|-------------|
-|[Two Fer](https://exercism.org/tracks/typescript/exercises/two-fer)| [Python](python/two-fer/two_fer.py), [TS](typescript/two-fer/two-fer.ts)| Create a sentence of the form "One for X, one for me. |
+|[Two Fer](https://exercism.org/tracks/typescript/exercises/two-fer)| [Go](go/two-fer/two_fer.go), [Python](python/two-fer/two_fer.py), [TS](typescript/two-fer/two-fer.ts)| Create a sentence of the form "One for X, one for me. |
 |[Hello World](https://exercism.org/tracks/java/exercises/hello-world)| [Go](go/hello-world/hello_world.go), [Java](java/hello-world/src/main/java/Greeter.java), [JS](javascript/hello-world/hello-world.js), [Python](python/hello-world/hello_world.py), [TS](typescript/hello-world/hello-world.ts) | The classical introductory exercise. Just say "Hello, World!" |
