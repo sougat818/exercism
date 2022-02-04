@@ -29,8 +29,7 @@ jobs:
       
     - name: golangci-lint
       uses: golangci/golangci-lint-action@v2
-      with: 
-          working-directory: go/**/
+      run: for d in go/*/ ; do (cd "$d" && golangci-lint run); done
 
         
 
