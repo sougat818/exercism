@@ -27,18 +27,11 @@ jobs:
     - name: Benchmark
       run: for d in go/*/ ; do (cd "$d" && go test -v --bench --benchmem ./...); done
       
-    - name: Vet
-      run: for d in go/*/ ; do (cd "$d" && go vet ./...); done
-      
-    - name: Run Revive Action by pulling pre-built image
-      uses: docker://morphy/revive-action:v2
-      with:
-        path: "./go/..."   
-      continue-on-error: true 
-    - name: Run staticcheck with reviewdog
-      uses: reviewdog/action-staticcheck@v1
-      with:
-          fail_on_error: true
+    - name: golangci-lint
+      uses: golangci/golangci-lint-action@v2
+      with: 
+          working-directory: go/**/
+
         
 
 
