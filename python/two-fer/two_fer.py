@@ -1,2 +1,10 @@
+"""
+Create a sentence of the form "One for X, one for me."
+"""
+
+
 def two_fer(name="you"):
-    return 'One for ' + name + ', one for me.'
+    """
+    Create a sentence of the form "One for X, one for me."
+    """
+    return f'One for {name}, one for me.'
