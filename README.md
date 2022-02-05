@@ -15,7 +15,7 @@ and [TypeScript](https://exercism.org/tracks/typescript)
 |----------------------------------------------------------------------|-------------------------------------------------------------------------------|-------------|
 |[Gross Store](https://exercism.org/tracks/go/exercises/gross-store)| [gross-store](go/gross-store/gross_store.go)                                  | Learn about maps by selling items by the dozen at the Gross Store. |
 |[Lasagna Master](https://exercism.org/tracks/go/exercises/lasagna-master)| [lasagna-master](go/lasagna-master/lasagna_master.go)                         | Dive deeper into Go functions while preparing to cook the perfect lasagna. |
-|[Two Fer](https://exercism.org/tracks/go/exercises/hamming)| [hamming](go/hamming/hamming.go)                                              | Calculate the Hamming difference between two DNA strands. |
+|[Hamming](https://exercism.org/tracks/go/exercises/hamming)| [hamming](go/hamming/hamming.go)                                              | Calculate the Hamming difference between two DNA strands. |
 |[Two Fer](https://exercism.org/tracks/go/exercises/two-fer)| [two-fer](go/two-fer/two_fer.go)                                              | Create a sentence of the form "One for X, one for me." |
 |[Bird Watcher](https://exercism.org/tracks/go/exercises/bird-watcher)| [bird-watcher](go/bird-watcher/bird_watcher.go)                               | Count the birds in your garden with for loops. |
 |[Booking up for Beauty](https://exercism.org/tracks/go/exercises/booking-up-for-beauty)| [booking-up-for-beauty](go/booking-up-for-beauty/booking_up_for_beauty.go)    | Learn about time by handling appointments in a beauty salon. |
