@@ -33,13 +33,14 @@ and [TypeScript](https://exercism.org/tracks/typescript)
 
 ### Java
 
-| Exercism Problem                                                        | Solution                                                                                   | Description |
-|-------------------------------------------------------------------------|--------------------------------------------------------------------------------------------|-------------|
-| [Play Your Cards!](https://exercism.org/tracks/java/exercises/blackjack) | [blackjack](java/blackjack/src/main/java/Blackjack.java) | Learn about conditionals by playing Blackjack.|
+| Exercism Problem                                                        | Solution                                                                                    | Description |
+|-------------------------------------------------------------------------|---------------------------------------------------------------------------------------------|-------------|
+| [Bird Watcher](https://exercism.org/tracks/java/exercises/bird-watcher) | [bird-watcher](java/bird-watcher/src/main/java/BirdWatcher.java)                            | Learn about arrays by keeping track of how many birds visit your garden.|
+| [Play Your Cards!](https://exercism.org/tracks/java/exercises/blackjack) | [blackjack](java/blackjack/src/main/java/Blackjack.java)                                    | Learn about conditionals by playing Blackjack.|
 | [Annalyn's Infiltration](https://exercism.org/tracks/java/exercises/annalyns-infiltration) | [annalyns-infiltration](java/annalyns-infiltration/src/main/java/AnnalynsInfiltration.java) | Learn about booleans while helping Annalyn rescue her friend. |
-| [Two Fer](https://exercism.org/tracks/java/exercises/two-fer)           | [two-fer](java/two-fer/src/main/java/TwoFer.java)                                          | Create a sentence of the form "One for X, one for me." |
-| [Cook your lasagna](https://exercism.org/tracks/java/exercises/lasagna) | [lasagna](java/lasagna/src/main/java/Lasagna.java)                                         | Learn about the basics of Java by following a lasagna recipe. |
-| [Hello World](https://exercism.org/tracks/java/exercises/hello-world)   | [hello-world](java/hello-world/src/main/java/Greeter.java)                                 | The classical introductory exercise. Just say "Hello, World!" |
+| [Two Fer](https://exercism.org/tracks/java/exercises/two-fer)           | [two-fer](java/two-fer/src/main/java/TwoFer.java)                                           | Create a sentence of the form "One for X, one for me." |
+| [Cook your lasagna](https://exercism.org/tracks/java/exercises/lasagna) | [lasagna](java/lasagna/src/main/java/Lasagna.java)                                          | Learn about the basics of Java by following a lasagna recipe. |
+| [Hello World](https://exercism.org/tracks/java/exercises/hello-world)   | [hello-world](java/hello-world/src/main/java/Greeter.java)                                  | The classical introductory exercise. Just say "Hello, World!" |
 
 ### JavaScript
 
@@ -58,6 +59,7 @@ and [TypeScript](https://exercism.org/tracks/typescript)
 |[Hello World](https://exercism.org/tracks/python/exercises/hello-world)| [hello-world](python/hello-world/hello_world.py)               | The classical introductory exercise. Just say "Hello, World!" |
 
 ### TypeScript
+
 | Exercism Problem                                                            | Solution                                             | Description |
 |-----------------------------------------------------------------------------|------------------------------------------------------|-------------|
 |[Two Fer](https://exercism.org/tracks/typescript/exercises/two-fer)| [two-fer](typescript/two-fer/two-fer.ts)             | Create a sentence of the form "One for X, one for me." |
