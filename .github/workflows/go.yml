@@ -29,8 +29,8 @@ jobs:
 
       - name: golangci-lint
         run: |
-        sudo snap install golangci-lint
-        for d in go/*/ ; do (cd "$d" && golangci-lint run); done
+          sudo snap install golangci-lint
+          for d in go/*/ ; do (cd "$d" && golangci-lint run); done
 
         
 
