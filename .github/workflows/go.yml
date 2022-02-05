@@ -29,7 +29,7 @@ jobs:
 
       - name: golangci-lint
         run: |
-          sudo snap install golangci-lint
+          curl -sSfL https://raw.githubusercontent.com/golangci/golangci-lint/master/install.sh | sh -s -- -b $(go env GOPATH)/bin v1.44.0
           for d in go/*/ ; do (cd "$d" && golangci-lint run); done
 
         
