@@ -1,6 +1,6 @@
 
-# Created by https://www.toptal.com/developers/gitignore/api/go,git,yarn,java,node,gradle,python,exercism,visualstudiocode,intellij+all
-# Edit at https://www.toptal.com/developers/gitignore?templates=go,git,yarn,java,node,gradle,python,exercism,visualstudiocode,intellij+all
+# Created by https://www.toptal.com/developers/gitignore/api/go,git,yarn,java,node,gradle,python,exercism,intellij+all,visualstudiocode,macos
+# Edit at https://www.toptal.com/developers/gitignore?templates=go,git,yarn,java,node,gradle,python,exercism,intellij+all,visualstudiocode,macos
 
 ### Exercism ###
 # gitignore template for Exercism project
@@ -171,6 +171,35 @@ modules.xml
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
 replay_pid*
+
+### macOS ###
+# General
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Icon must end with two \r
+Icon
+
+
+# Thumbnails
+._*
+
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
 
 ### Node ###
 # Logs
@@ -519,4 +548,4 @@ gradle-app.setting
 # JDT-specific (Eclipse Java Development Tools)
 .classpath
 
-# End of https://www.toptal.com/developers/gitignore/api/go,git,yarn,java,node,gradle,python,exercism,visualstudiocode,intellij+all
+# End of https://www.toptal.com/developers/gitignore/api/go,git,yarn,java,node,gradle,python,exercism,intellij+all,visualstudiocode,macos
