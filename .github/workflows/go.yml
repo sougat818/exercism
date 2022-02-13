@@ -25,7 +25,7 @@ jobs:
         run: for d in go/*/ ; do (cd "$d" && go test ./...); done
 
       - name: Benchmark
-        run: for d in go/*/ ; do (cd "$d" && go test -v --bench --benchmem ./...); done
+        run: for d in go/*/ ; do (cd "$d" && go test --bench --benchmem ./...); done
 
       - name: golangci-lint
         run: |
