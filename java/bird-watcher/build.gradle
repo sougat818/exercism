@@ -17,6 +17,8 @@ repositories {
 dependencies {
     testImplementation "junit:junit:4.13.2"
     testImplementation "org.assertj:assertj-core:3.22.0"
+    spotbugs 'com.github.spotbugs:spotbugs:4.5.3'
+    spotbugsPlugins 'com.h3xstream.findsecbugs:findsecbugs-plugin:1.11.0'
 }
 
 test {

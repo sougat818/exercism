@@ -28,6 +28,6 @@ jobs:
     - name: Run the Gradle package task
       run: for d in java/*/ ; do (cd "$d" && gradle build); done
     - name: Run the Gradle package task
-      run: for d in java/*/ ; do (cd "$d" && gradle -q check); done
+      run: for d in java/*/ ; do (cd "$d" && gradle -q check spotbugsMain); done
     - name: Run the Gradle dependency task
       run: for d in java/*/ ; do ( cd "$d" && gradle -DgradleReleaseChannel=current dependencyUpdates | grep "\\->"  && (test $? -ne 0 || echo "$d") ) ; done
