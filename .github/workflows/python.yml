@@ -31,12 +31,12 @@ jobs:
         # stop the build if there are Python syntax errors or undefined names
         for d in python/*/ ; do (cd "$d" && flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics); done
         
-        # exit-zero treats all errors as warnings. The GitHub editor is 127 chars wide
-        for d in python/*/ ; do (cd "$d" && flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics); done
+        # The GitHub editor is 127 chars wide
+        for d in python/*/ ; do (cd "$d" && flake8 . --count --max-complexity=10 --max-line-length=127 --statistics); done
         
     - name: Analysing the code with pylint
       run: |
-        for d in python/*/ ; do (cd "$d" && pylint --exit-zero $(git ls-files '*.py')); done
+        for d in python/*/ ; do (cd "$d" && pylint *.py); done
         
     - name: Test with pytest
       run: |
