@@ -94,6 +94,21 @@ func TestDrive(t *testing.T) {
 			},
 		},
 		{
+			name: "Drive the car with exactly enough battery.",
+			car: Car{
+				speed:        18,
+				batteryDrain: 10,
+				battery:      10,
+				distance:     0,
+			},
+			expected: Car{
+				speed:        18,
+				batteryDrain: 10,
+				battery:      0,
+				distance:     18,
+			},
+		},
+		{
 			name: "Drive when battery percentage is below battery drain",
 			car: Car{
 				speed:        5,
@@ -121,6 +136,36 @@ func TestDrive(t *testing.T) {
 				batteryDrain: 5,
 				battery:      4,
 				distance:     0,
+			},
+		},
+		{
+			name: "Drive the car with positive initial distance and battery drained",
+			car: Car{
+				speed:        5,
+				batteryDrain: 3,
+				battery:      2,
+				distance:     1,
+			},
+			expected: Car{
+				speed:        5,
+				batteryDrain: 3,
+				battery:      2,
+				distance:     1,
+			},
+		},
+		{
+			name: "Drive the car with positive initial distance and full battery",
+			car: Car{
+				speed:        5,
+				batteryDrain: 3,
+				battery:      100,
+				distance:     1,
+			},
+			expected: Car{
+				speed:        5,
+				batteryDrain: 3,
+				battery:      97,
+				distance:     6,
 			},
 		},
 	}

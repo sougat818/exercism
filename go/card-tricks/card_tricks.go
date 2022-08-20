@@ -1,12 +1,18 @@
 package cards
 
-// GetItem retrieves an item from a slice at given position. The second return value indicates whether
-// the given index exists in the slice or not.
-func GetItem(slice []int, index int) (int, bool) {
+// FavoriteCards returns a slice with the cards 2, 6 and 9 in that order.
+func FavoriteCards() []int {
+	var slice []int
+	return PrependItems(slice, 2, 6, 9)
+}
+
+// GetItem retrieves an item from a slice at given position.
+// If the index is out of range, we want it to return -1.
+func GetItem(slice []int, index int) int {
 	if isValidIndex(slice, index) {
-		return slice[index], len(slice) > index
+		return slice[index]
 	}
-	return 0, false
+	return -1
 }
 
 // SetItem writes an item to a slice at given position overwriting an existing value.
@@ -20,13 +26,12 @@ func SetItem(slice []int, index, value int) []int {
 	return slice
 }
 
-// PrefilledSlice creates a slice of given length and prefills it with the given value.
-func PrefilledSlice(value, length int) []int {
-	slice := []int{}
-	for ; length > 0; length-- {
-		slice = append(slice, value)
-	}
-	return slice
+// PrependItems adds an arbitrary number of values at the front of a slice.
+func PrependItems(slice []int, values ...int) []int {
+	var s []int
+	s = append(s, values...)
+	s = append(s, slice...)
+	return s
 }
 
 // RemoveItem removes an item from a slice by modifying the existing slice.

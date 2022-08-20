@@ -1,7 +1,7 @@
 package cars
 
-const costOfOneCar = 10_000
-const costOf10Cars = 95_000
+const costOfOneCar = 10000
+const costOf10Cars = 95000
 
 // CalculateWorkingCarsPerHour calculates how many working cars are
 // produced by the assembly line every hour

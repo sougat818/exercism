@@ -22,6 +22,17 @@ func ParseCard(card string) int {
 	return cards[card]
 }
 
+// FirstTurn returns the decision for the first turn, given two cards of the
+// player and one card of the dealer.
+func FirstTurn(card1, card2, dealerCard string) string {
+	switch {
+	case ParseCard(card1)+ParseCard(card2) > 20:
+		return LargeHand(IsBlackjack(card1, card2), ParseCard(dealerCard))
+	default:
+		return SmallHand(ParseCard(card1)+ParseCard(card2), ParseCard(dealerCard))
+	}
+}
+
 // IsBlackjack returns true if the player has a blackjack, false otherwise.
 func IsBlackjack(card1, card2 string) bool {
 	return ParseCard(card1)+ParseCard(card2) == 21
