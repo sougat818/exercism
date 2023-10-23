@@ -7,6 +7,10 @@ tasks:
     command: go install honnef.co/go/tools/cmd/staticcheck@latest
   - name: Install Go revive
     command: go install github.com/mgechev/revive@latest
+  - name: Upgrade sdk
+    command: sdk selfupdate
+  - name: SDK update
+    command:
 
 vscode:
   extensions:
@@ -16,3 +20,8 @@ vscode:
     - redhat.java
     - davidanson.vscode-markdownlint
     - golang.go
+
+jetbrains:
+  intellij:
+    plugins:
+         - com.shuzijun.markdown-editor
