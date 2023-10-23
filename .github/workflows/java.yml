@@ -26,4 +26,8 @@ jobs:
         java-version: '17'
         distribution: 'temurin'
     - name: Run the Gradle assemble task
-      run: gradle -q clean check
+      run: for d in java/*/ ; do (cd "$d" && gradle -q assemble); done
+    - name: Run the Gradle check task
+      run: for d in java/*/ ; do (cd "$d" && gradle -q check spotbugsMain spotbugsTest); done
+    - name: Run the Gradle dependency task
+      run: for d in java/*/ ; do ( cd "$d" && gradle -DgradleReleaseChannel=current dependencyUpdates | grep "\\->"  && (test $? -ne 0 || echo "$d") ) ; done
