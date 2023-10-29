@@ -1,6 +1,6 @@
 FROM gitpod/workspace-full
 
-ARG EXERCISM_VERSION=3.0.10
+ARG EXERCISM_VERSION=3.2.0
 
 # Install custom tools, runtime, etc.
 RUN sudo apt-get update \
