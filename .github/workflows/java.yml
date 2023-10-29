@@ -26,4 +26,4 @@ jobs:
         java-version: '17'
         distribution: 'temurin'
     - name: Run the Gradle assemble task
-      run: cd java && gradle clean verify
+      run: cd java && gradle clean test
