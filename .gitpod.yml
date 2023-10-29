@@ -7,10 +7,10 @@ tasks:
     command: go install honnef.co/go/tools/cmd/staticcheck@latest
   - name: Install Go revive
     command: go install github.com/mgechev/revive@latest
-  - name: Upgrade sdk
+  - name: Upgrade sdkman iteself
     command: sdk selfupdate
-  - name: SDK update
-    command:
+  - name: SDK upgrade
+    command: sdk update && sdk upgrade
 
 vscode:
   extensions:
