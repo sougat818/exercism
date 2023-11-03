@@ -1,0 +1,32 @@
+apply plugin: 'com.github.spotbugs'
+
+allprojects { project ->
+    project.afterEvaluate {
+        if (project.plugins.hasPlugin('java')) {
+
+            project.apply plugin: 'com.github.spotbugs'
+
+            project.configurations {
+                spotbugsPlugins
+            }
+
+            project.dependencies {
+                spotbugsPlugins 'com.h3xstream.findsecbugs:findsecbugs-plugin:1.12.0'
+            }
+
+            project.spotbugs {
+                toolVersion = '4.8.0'
+                showProgress = false
+                ignoreFailures = false
+                effort = 'max'
+                reportLevel = 'low'
+
+            }
+
+            project.spotbugsTest {
+                enabled = false
+            }
+        }
+    }
+}
+
