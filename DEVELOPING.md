@@ -141,6 +141,30 @@ linters-settings:
 `exercism download --exercise=exerciseName --track=java`
 
 Add exercise name to [java/settings.gradle](java/settings.gradle)
+after commit 
+move classes to a package exercism
+
+build.gradle
+`
+plugins {
+id 'info.solidsoft.pitest' version '1.15.0'
+}
+dependencies {
+testImplementation 'org.pitest:pitest-parent:1.1.10'
+}
+
+pitest {
+targetClasses = ['exercism.*']  //by default "${project.group}.*"
+junit5PluginVersion = '1.2.1'
+pitestVersion = '1.15.0' //not needed when a default PIT version should be used
+threads = 4
+outputFormats = ['XML', 'HTML']
+timestampedReports = false
+}
+`
+Run `gradle pitest` then check the report
+discard these changes if everything looks good
+
 
 ### Submit solution to exercism
 
