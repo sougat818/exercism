@@ -124,15 +124,15 @@ linters-settings:
 ### Pre requisites
 
 * exercism CLI
-* jabba
-* Java 17
+* sdkman
+* Java 21
 * Gradle
 
 #### Test
 
 `gradle test`
 
-#### Lint
+#### Lint & Test
 
 `gradle check`
 
@@ -140,14 +140,7 @@ linters-settings:
 
 `exercism download --exercise=exerciseName --track=java`
 
-The exercism codebase doesn't have findbugs so we add them by
-
-* Adding to build.gradle
-```groovy
-plugins {
-  id "com.github.spotbugs" version "5.0.5"
-}
-```
+Add exercise name to [java/settings.gradle](java/settings.gradle)
 
 ### Submit solution to exercism
 

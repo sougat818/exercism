@@ -20,8 +20,3 @@ vscode:
     - redhat.java
     - davidanson.vscode-markdownlint
     - golang.go
-
-jetbrains:
-  intellij:
-    plugins:
-         - com.shuzijun.markdown-editor
