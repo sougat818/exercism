@@ -10,4 +10,4 @@ This file contains a checklist of steps to update the codebase. There are global
 - [ ] Update exercism exercises 
   - [ ] `for d in java/*/ ; do (cd "$d" && dir_name="${d#java/}"; exercism download --exercise="${dir_name%/}" --track=java); done`
 - [ ] Update spotbugs versions in 
-  - [ ] [java/.gitpod.dockerfile](java/.gitpod.dockerfile) from https://github.com/spotbugs/spotbugs-gradle-plugin#spotbugs-version-mapping
+  - [ ] [java/spotbugs.gradle](java/spotbugs.gradle) from https://github.com/spotbugs/spotbugs-gradle-plugin#spotbugs-version-mapping

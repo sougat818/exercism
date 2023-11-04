@@ -124,15 +124,15 @@ linters-settings:
 ### Pre requisites
 
 * exercism CLI
-* jabba
-* Java 17
+* sdkman
+* Java 21
 * Gradle
 
 #### Test
 
 `gradle test`
 
-#### Lint
+#### Lint & Test
 
 `gradle check`
 
@@ -140,14 +140,31 @@ linters-settings:
 
 `exercism download --exercise=exerciseName --track=java`
 
-The exercism codebase doesn't have findbugs so we add them by
+Add exercise name to [java/settings.gradle](java/settings.gradle)
+after commit 
+move classes to a package exercism
 
-* Adding to build.gradle
-```groovy
+build.gradle
+`
 plugins {
-  id "com.github.spotbugs" version "5.0.5"
+id 'info.solidsoft.pitest' version '1.15.0'
 }
-```
+dependencies {
+testImplementation 'org.pitest:pitest-parent:1.1.10'
+}
+
+pitest {
+targetClasses = ['exercism.*']  //by default "${project.group}.*"
+junit5PluginVersion = '1.2.1'
+pitestVersion = '1.15.0' //not needed when a default PIT version should be used
+threads = 4
+outputFormats = ['XML', 'HTML']
+timestampedReports = false
+}
+`
+Run `gradle pitest` then check the report
+discard these changes if everything looks good
+
 
 ### Submit solution to exercism
 
