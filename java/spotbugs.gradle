@@ -11,15 +11,18 @@ allprojects { project ->
             }
 
             project.dependencies {
-                spotbugsPlugins 'com.h3xstream.findsecbugs:findsecbugs-plugin:1.12.0'
+                spotbugsPlugins "com.h3xstream.findsecbugs:findsecbugs-plugin:${findSecBugsPluginVersion}"
             }
 
+            def classLoader = plugins['com.github.spotbugs'].class.classLoader
+            def SpotBugsEffort = classLoader.findLoadedClass( 'com.github.spotbugs.snom.Effort' )
+            def SpotBugsConfidence = classLoader.findLoadedClass( 'com.github.spotbugs.snom.Confidence' )
             project.spotbugs {
-                toolVersion = '4.8.0'
+                toolVersion = "${spotbugsToolVersion}"
                 showProgress = false
                 ignoreFailures = false
-                effort = 'max'
-                reportLevel = 'low'
+                effort = SpotBugsEffort.MAX
+                reportLevel = SpotBugsConfidence.LOW
 
             }
 

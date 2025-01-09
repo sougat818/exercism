@@ -1,3 +1,5 @@
+# Introduction
+
 This file contains a checklist of steps to update the codebase. There are global and language specific steps.
 
 ## Exercism
@@ -7,7 +9,10 @@ This file contains a checklist of steps to update the codebase. There are global
 
 ## Java
 
-- [ ] Update exercism exercises 
+- [ ] Update exercism exercises
   - [ ] `for d in java/*/ ; do (cd "$d" && dir_name="${d#java/}"; exercism download --exercise="${dir_name%/}" --track=java); done`
-- [ ] Update spotbugs versions in 
-  - [ ] [java/spotbugs.gradle](java/spotbugs.gradle) from https://github.com/spotbugs/spotbugs-gradle-plugin#spotbugs-version-mapping
+- [ ] Update spotbugs versions in
+  - [ ] [java/gradle.properties](java/gradle.properties) from <https://github.com/spotbugs/spotbugs-gradle-plugin#spotbugs-version-mapping>
+- [ ] Update Java version in
+  - [ ] [.github/workflows/java.yml](.github/workflows/java.yml)
+  - [ ] [.sdkmanrc](.sdkmanrc)
