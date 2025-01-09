@@ -9,10 +9,11 @@ tasks:
     command: go install github.com/mgechev/revive@latest
   - name: Upgrade sdkman iteself
     command: sdk selfupdate
-  - name: SDK upgrade
-    command: sdk update && sdk upgrade
   - name: Get Java SDK 
     command: sdk env install && sdk env
+  - name: SDK upgrade
+    command: sdk update && sdk upgrade
+
 
 vscode:
   extensions:
