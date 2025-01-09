@@ -1,6 +1,6 @@
 FROM gitpod/workspace-full
 
-ARG EXERCISM_VERSION=3.2.0
+ARG EXERCISM_VERSION=3.5.4
 
 # Install custom tools, runtime, etc.
 RUN sudo apt-get update \
@@ -17,7 +17,7 @@ RUN mkdir -p /home/gitpod/.sdkman/etc
 RUN cat > /home/gitpod/.sdkman/etc/config <<EOF
 sdkman_auto_answer=true
 sdkman_auto_complete=true
-sdkman_auto_env=false
+sdkman_auto_env=true
 sdkman_beta_channel=false
 sdkman_colour_enable=true
 sdkman_curl_connect_timeout=7

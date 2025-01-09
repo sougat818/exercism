@@ -11,6 +11,8 @@ tasks:
     command: sdk selfupdate
   - name: SDK upgrade
     command: sdk update && sdk upgrade
+  - name: Get Java SDK 
+    command: sdk env install && sdk env
 
 vscode:
   extensions:
@@ -20,3 +22,8 @@ vscode:
     - redhat.java
     - davidanson.vscode-markdownlint
     - golang.go
+    - ms-python.debugpy
+    - vscjava.vscode-gradle
+    - vscjava.vscode-java-debug
+    - vscjava.vscode-java-dependency
+    - vscjava.vscode-java-test
